@@ -6,15 +6,25 @@ import { toggleTheme } from "../../reducers/theme";
 
 function ThemeToggle(props) {
   let dispatch = useDispatch();
-  const theme = useSelector((state) => state.theme);
+  
+  const theme = useSelector((state) => {
+    return state.theme;
+  });
+  
   let themeOptions = [
     { id: "light", text: "Light", icon: "" },
     { id: "dark", text: "Dark", icon: "" },
   ];
+  
   let title = theme === "light" ? "Light" : "Dark";
 
   function handleSelect(choice) {
-    dispatch(toggleTheme(choice));
+    
+    try {
+      dispatch(toggleTheme(choice));
+    } catch (error) {
+      console.error('Dispatch failed:', error);
+    }
   }
 
   return (
