@@ -1192,7 +1192,7 @@ body.dark {
     position: absolute;
     z-index: 2;
     top: 17px;
-    left: 100px;
+    right: 0px;
     padding: var(--padding_small);
     font-size: 12px;
     line-height: 12px;
