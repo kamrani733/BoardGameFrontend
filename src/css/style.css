@@ -1186,7 +1186,19 @@ body.dark {
 .confirm_cookies button:hover {
   background: transparent;
 }
+/* THEME */
 
+.theme-toggle {
+    position: absolute;
+    z-index: 2;
+    top: 17px;
+    left: 100px;
+    padding: var(--padding_small);
+    font-size: 12px;
+    line-height: 12px;
+    width: 100%;
+    max-width: 90px;
+}
 /* LANGUAGE */
 .language {
   position: absolute;

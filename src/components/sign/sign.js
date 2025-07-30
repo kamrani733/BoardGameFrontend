@@ -12,7 +12,7 @@ import SignUp from './signUp';
 import { changeUser } from '../../reducers/auth';
 import { isEmpty, setCookie } from '../../utils/utils';
 import Loader from '../partials/loader';
-import ThemeToggle from '../settings/ThemeToggle'; 
+import ThemeToggle from '../settings/themeToggle'; 
 
 function Sign(props) {
   const { lang, socket } = props;
